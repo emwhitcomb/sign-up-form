@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(144, 91, 23);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    background-image: url(./images/breakfast.avif);
+    background-position: center;
+    background-size: auto;
+    width: 40vw;
+}
+
+.logo{
+    display: flex;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Bubblegum Sans", sans-serif;
+    color: white;
+}
+
+.cutlery {
+    height: 10vh;
+}
+
+.sign-in {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60vw;
+}
+#description, #info, #create-login, #login {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+#description {
+    font-weight: 500;
+    height: 30vh;
+}
+
+#info {
+    background-color: white;
+    height: 44vh;
+}
+
+#create {
+    background-color:rgb(144, 91, 23);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 1vw;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(144, 91, 23);
+    box-shadow: 2px 2px 4px rgb(144, 91, 23);
+}
+
+button:hover {
+    filter: brightness(150%);
+}
+
+#error-msg {
+    color: red;
+}

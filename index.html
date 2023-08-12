@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bubblegum+Sans&family=Lacquer&family=Lato:wght@700&family=Libre+Franklin&family=Nunito+Sans:wght@600&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">
+                <img class="cutlery" src="./images/white-logo.png" alt="Cutlery">
+                <h1>Eats</h1>
+            </div>
+        </div>
+        <div class="sign-in">
+            <div id="description">
+                <p>This is not a real online service! You know you need something like this to help you with your busy life. 
+                    Recipes for each night of the week, plus the week's shopping list to make it happen? <b>Done! 
+                    </b>Sign up <i>now</i> to get started. <br><br>You <em>know</em> you want to.</p>
+            </div>
+            <div id="info">
+                <h2>Let's do this!</h2>
+                <form id="entry" action="#" method="get">
+                    <div class="row">
+                        <div class="left">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first-name" required>
+                        </div> 
+                        <div class="right">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="right">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="phone" name="phone" id="phone" pattern="[0-9]{10}" required title="Phone numbers must contain 10 digits.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain a minimum of 8 alpha-numeric characters.">
+                        </div>
+                        <div class="right">
+                            <label for="confirm_pw">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_pw" id="confirm-pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain a minimum of 8 alpha-numeric characters.">
+                            <div id="error-msg"></div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button id="create" type="submit" onclick=>Create Account</button>
+                </form>
+            </div>
+            <div id="login">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
